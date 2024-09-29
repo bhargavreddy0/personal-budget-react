@@ -8,6 +8,9 @@ import Footer from './Footer/Footer';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import AboutPage from './AboutPage/AboutPage';
 import LoginPage from './LoginPage/LoginPage';
+import ChartComponent from './Charts/ChartComponent';
+import D3ChartComponent from './Charts/D3ChartComponent';
+
 
 
 function App() {
@@ -28,7 +31,9 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <HomePage/>
+      <ChartComponent/>
+      <D3ChartComponent/>
+
       <Footer/>
     </Router>
   );
