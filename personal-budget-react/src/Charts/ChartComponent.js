@@ -21,7 +21,7 @@ function ChartComponent() {
 
   useEffect(() => {
     // Fetching data from the budget.json file
-    axios.get('/budget.json')
+    axios.get('http://localhost:3000/budget')
       .then((response) => {
         const budgetData = response.data.mybudget;
         const labels = budgetData.map(item => item.title);

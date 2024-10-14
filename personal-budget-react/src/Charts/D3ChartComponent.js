@@ -7,7 +7,7 @@ function D3ChartComponent() {
 
   useEffect(() => {
     // Fetch data from the budget.json file
-    axios.get('/budget.json')
+    axios.get('http://localhost:3000/budget')
       .then((response) => {
         const budgetData = response.data.mybudget.map(item => ({
           label: item.title,
